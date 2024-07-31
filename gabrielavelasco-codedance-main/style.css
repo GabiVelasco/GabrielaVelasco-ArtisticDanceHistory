@@ -479,36 +479,6 @@ p {
 
 
 
-.text {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    background: #fff;
-    overflow:scroll;
-    
-   
-    vertical-align: middle;
-  
-}
-
-.text .box {
-    padding: 4rem;
-    margin: 0 auto;
-    max-width: 1000px;
-    z-index: 1;
-    height:100%;
-    vertical-align: middle;
-    top:-25%;
-    transform: translateY(25%);
-    
-
-}
-
 h3 {
     font-size: 4rem;
     margin-bottom: 1.5rem;
@@ -539,12 +509,15 @@ p {
 .animate .bg, .bg1, .bg2, .bg3, .bg4  {
     background-position: center;
     width: 50%;
+    height:50%;
     
 }
 
 .animate .bg {
     background-position: center;
     width: 100%;
+    height: 50%;
+    
     
 }
 
@@ -572,12 +545,47 @@ p {
     
 }
 
+
+
+.text {
+    position: absolute;
+    bottom: 100%;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    overflow:scroll;
+    
+   
+    vertical-align: middle;
+  
+}
+
+.text .box {
+    padding: 4rem;
+    margin: 0 auto;
+    max-width: 1000px;
+    z-index: 1;
+    height:100%;
+    vertical-align: middle;
+    top:-25%;
+    transform: translateY(25%);
+    
+
+}
+
+
 .transition .text {
-    transition: left 1s ease;
+    transition: top 1s ease;
 }
 
 .animate .text {
-    left: 0%;
+    top: 50%;
+    left:0;
+    bottom:50%;
     vertical-align: middle;
     
     
