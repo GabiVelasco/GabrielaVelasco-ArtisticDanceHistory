@@ -1,0 +1,458 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body::after, html::after, section::after {overflow:scroll;}
+
+body {
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'IBM Plex Serif', serif;
+    overflow:scroll;
+    z-index: 6000;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.mask {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    padding: 3rem;
+}
+
+.l .mask {
+    background-image: url(img/Dancer-Background-3.png);
+}
+
+.k .mask {
+    background-image: url(img/Dance-Projects-2.png);
+}
+
+/* Stil für zusätzliche Slide */
+.k .inner2 {
+    display: none; /* Zusätzliche Slide standardmäßig ausblenden */
+}
+
+.kl .mask {
+    background-image: url(img/DanceClasses_groß3.png);
+}
+
+
+
+h2 {
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+button {
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    font-weight: 700;
+    font-size: 1rem;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0.25rem;
+    font-family: 'IBM Plex Serif', serif;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    background: #fff;
+    color: #333;
+}
+
+.close {
+    width: 3rem;
+    height: 3rem;
+    color:#060707;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.inner {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 800px;
+}
+
+.bg1 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 800px;
+}
+
+.bg2 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 800px;
+}
+
+.bg3 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 800px;
+}
+
+.bg4 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 800px;
+}
+
+.l .bg {
+    background-image: url(img/IMG_8450.JPG);
+    background-color: #060707;
+    
+    
+}
+
+.k .bg {
+    background-image: url(img/smaller_IMG_8494.jpg);
+    background-color:#060707;
+    width: 100%;
+    height: 100%;
+}
+
+.k .bg1 {
+    background-image: url(img/smaller_jg237213_GabrielaVelasco.jpg);
+    background-color:#060707;
+    width: 100%;
+    height: 100%;
+}
+
+.k .bg2 {
+    background-image: url(img/OOIG31BHXTUT9GiwuD4.png);
+    background-color:#060707;
+    width: 100%;
+    height: 100%;
+}
+
+.k .bg3 {
+    background-image: url(img/smaller_IMG_8389.jpg);
+    background-color:#060707;
+    width: 100%;
+    height: 100%;
+}
+
+.k .bg4 {
+    background-image: url(img/901694_566386796726376_833546323_o_.jpg);
+    background-color:#060707;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.kl .bg {
+    background-image: url(img/CG4A1312b-fotor-2024031323416.png);
+    background-color:#060707;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    overflow:scroll;
+    
+   
+    vertical-align: middle;
+  
+}
+
+.text .box {
+    padding: 4rem;
+    margin: 0 auto;
+    max-width: 1000px;
+    z-index: 1;
+    height:100%;
+    vertical-align: middle;
+    top:-25%;
+    transform: translateY(25%);
+    
+
+}
+
+h3 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    color: #555;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.transition .mask {
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.animate .mask {
+    transform: scale(10);
+    opacity: 0;
+}
+
+.transition .bg, .bg1, .bg2, .bg3 {
+    transition: background-position 1s ease;
+    transition: width 1s ease;
+
+    
+}
+
+.animate .bg, .bg1, .bg2, .bg3  {
+    background-position: center;
+    width: 50%;
+    
+}
+
+.animate .bg {
+    background-position: center;
+    width: 50%;
+    
+}
+
+.animate .bg1 {
+    background-position: center;
+    width: 50%;
+    
+}
+
+.animate .bg2 {
+    background-position: center;
+    width: 50%;
+ 
+}
+
+.animate .bg3 {
+    background-position: center;
+    width: 50%;
+    
+}
+
+.animate .bg4 {
+    background-position: center;
+    width: 50%;
+    
+}
+
+
+/* .animate .k .bg {
+    background-image: url(img/IMG_8494.JPG);
+    background-color:#060707;
+    width: 50%;
+    height: 100%;
+} */
+
+.transition .text {
+    transition: left 1s ease;
+}
+
+.animate .text {
+    left: 50%;
+    vertical-align: middle;
+    
+    
+}
+
+.animate-completed .mask {
+    display: none;
+}
+
+
+/* slides */
+
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: red;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.arrow-left {
+    left: 10px;
+    z-index: 4;
+}
+
+.arrow-right {
+    right: 10px;
+    z-index: 4;
+}
+
+/* slides end */
+
+
+
+/* slides w3schools*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1000px; */
+  /* position: absolute; */
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(181, 159, 159);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 4;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(205, 84, 84, 0.8);
+}
+
+/* Caption text */
+/* .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+} */
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* slides w3schools ende*/
